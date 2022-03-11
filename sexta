@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <locale.h>
+
+int somaden ( int n){
+
+	int soma = 0;
+	
+	for (int i = 1; i <= n; i++){
+		  soma = soma + i;
+	}
+	
+	return soma;
+}
+
+int main () {
+	
+	setlocale(LC_ALL, "Portuguese_Brazil");
+	
+	int numero, resultado = 0;
+	
+	printf("\nSoma dos numeros inteiros entre 1 e n");
+	
+	printf("\nDigite o valor de n: ");
+	scanf("%d", &numero);
+	
+	resultado = somaden(numero);
+	
+	printf("A resultado da sona é %d", resultado);
+	
+}
